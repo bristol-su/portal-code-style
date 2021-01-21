@@ -1,0 +1,14 @@
+{
+    "name": "bristol-su/portal-code-style",
+    "description": "Styles for the Bristol SU Portal",
+    "type": "library",
+    "require": {
+        "friendsofphp/php-cs-fixer": "^2.18"
+    },
+    "authors": [
+        {
+            "name": "Toby Twigger",
+            "email": "tobytwigger1@gmail.com"
+        }
+    ]
+}
