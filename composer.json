@@ -10,5 +10,19 @@
             "name": "Toby Twigger",
             "email": "tobytwigger1@gmail.com"
         }
-    ]
+    ],
+    "require-dev": {
+        "pheromone/phpcs-security-audit": "^2.0",
+        "phpunit/phpunit": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "BristolSU\\CodeStyle\\PhpCs\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "BristolSU\\CodeStyle\\Tests\\PhpCs\\": "tests/"
+        }
+    }
 }

@@ -1,2 +1,5 @@
-# portal-code-style
-Code styles for the Bristol SU Portal
+# Portal Code Style
+> Bring your coding style in line with the Bristol SU Portal Guidelines
+
+## Installation
+
