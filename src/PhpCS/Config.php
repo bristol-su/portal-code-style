@@ -1,6 +1,6 @@
 <?php
 
-namespace BristolSU\CodeStyle\PhpCs;
+namespace BristolSU\CodeStyle\PhpCS;
 
 class Config extends \PhpCsFixer\Config
 {

@@ -3,7 +3,9 @@
     "description": "Styles for the Bristol SU Portal",
     "type": "library",
     "require": {
-        "friendsofphp/php-cs-fixer": "^2.18"
+        "php": ">=7.2",
+        "friendsofphp/php-cs-fixer": "^2.18",
+        "rector/rector": "0.9.16"
     },
     "authors": [
         {
@@ -17,12 +19,15 @@
     },
     "autoload": {
         "psr-4": {
-            "BristolSU\\CodeStyle\\PhpCs\\": "src/"
+            "BristolSU\\CodeStyle\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "BristolSU\\CodeStyle\\Tests\\PhpCs\\": "tests/"
+            "BristolSU\\CodeStyle\\Tests\\": "tests/"
         }
-    }
+    },
+    "bin": [
+        "bin/code-style"
+    ]
 }
