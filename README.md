@@ -8,7 +8,7 @@ Pull in this project
 composer require bristol-su/portal-code-style
 ```
 
-Create a .php_cs.dist file in your project. You can find an example in [`./vendor/bristol-su/portal-code-style/examples/.php-cs.dist.example`](examples/.php-cs.dist.example)
+Create a .php_cs.dist file in your project. You can find an example in [`./vendor/bristol-su/portal-code-style/examples/.php_cs.dist.example`](examples/.php_cs.dist.example)
 
 Create a rector.php file in your project. You can find an example in [`./vendor/bristol-su/portal-code-style/examples/rector.php`](examples/rector.php)
 
@@ -16,8 +16,14 @@ Create a rector.php file in your project. You can find an example in [`./vendor/
 Add the following to your composer scripts
 
 ```
-    ./vendor/bin/php-cs-fixer fix --config .php-cs
-    ./vendor/bin/rector process src 
+    "scripts": {
+        "test": "vendor/bin/phpunit --colors=always --process-isolation --verbose --configuration phpunit.xml",
+        "code-style": [
+            "vendor/bin/php-cs-fixer fix --config .php_cs --dry-run --verbose --using-cache=no",
+            "vendor/bin/rector process --dry-run --output-format=console"
+        ],
+        "fix-code-style": "vendor/bin/php-cs-fixer fix --config .php_cs --verbose --using-cache=no"
+    }
 ```
 
 // Test this fixes. If it does, check out branch and fix whole of portal-v4

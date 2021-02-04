@@ -17,15 +17,10 @@ use Rector\CodingStyle\Rector\ClassConst\VarConstantCommentRector;
 use Rector\CodingStyle\Rector\ClassMethod\MakeInheritedMethodVisibilitySameAsParentRector;
 use Rector\CodingStyle\Rector\Encapsed\WrapEncapsedVariableInCurlyBracesRector;
 use Rector\CodingStyle\Rector\Throw_\AnnotateThrowablesRector;
-use Rector\CodingStyle\Rector\Use_\RemoveUnusedAliasRector;
 use Rector\CodingStyle\Rector\Use_\SplitGroupedUseImportsRector;
-use Rector\DeadCode\Rector\ClassConst\RemoveUnusedPrivateConstantRector as RemoveUnusedPrivateConstantRectorAlias;
 use Rector\DeadCode\Rector\ClassMethod\RemoveDeadConstructorRector;
-use Rector\DeadCode\Rector\ClassMethod\RemoveUnusedParameterRector;
 use Rector\DeadCode\Rector\Foreach_\RemoveUnusedForeachKeyRector;
-use Rector\DeadCode\Rector\Function_\RemoveUnusedFunctionRector;
 use Rector\DeadCode\Rector\FunctionLike\RemoveDeadReturnRector;
-use Rector\DeadCode\Rector\Property\RemoveUnusedPrivatePropertyRector;
 use Rector\Naming\Rector\Property\UnderscoreToCamelCasePropertyNameRector;
 use Rector\Naming\Rector\Variable\UnderscoreToCamelCaseLocalVariableNameRector;
 use Rector\Naming\Rector\Variable\UnderscoreToCamelCaseVariableNameRector;
@@ -44,10 +39,8 @@ class Rules
         $services->set(GetClassToInstanceOfRector::class);
         $services->set(IntvalToTypeCastRector::class);
         $services->set(NewStaticToNewSelfRector::class);
-        $services->set(SimplifyUselessVariableRector::class);
         $services->set(AnnotateThrowablesRector::class);
         $services->set(MakeInheritedMethodVisibilitySameAsParentRector::class);
-        $services->set(RemoveUnusedAliasRector::class);
         $services->set(SplitGroupedConstantsAndPropertiesRector::class);
         $services->set(SplitGroupedUseImportsRector::class);
         $services->set(SimplifyUselessVariableRector::class);
@@ -56,14 +49,11 @@ class Rules
         $services->set(RemoveDeadConstructorRector::class);
         $services->set(RemoveDeadReturnRector::class);
         $services->set(RemoveUnusedForeachKeyRector::class);
-        $services->set(RemoveUnusedFunctionRector::class);
-        $services->set(RemoveUnusedParameterRector::class);
-        $services->set(RemoveUnusedPrivateConstantRectorAlias::class);
-        $services->set(RemoveUnusedPrivatePropertyRector::class);
         $services->set(UnderscoreToCamelCaseLocalVariableNameRector::class);
         $services->set(UnderscoreToCamelCasePropertyNameRector::class);
         $services->set(UnderscoreToCamelCaseVariableNameRector::class);
         $services->set(MultipleClassFileToPsr4ClassesRector::class);
         $services->set(AddProphecyTraitRector::class);
+        $services->set(AnnotateThrowablesRector::class);
     }
 }
