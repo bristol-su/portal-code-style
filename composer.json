@@ -5,7 +5,8 @@
     "require": {
         "php": ">=7.2",
         "friendsofphp/php-cs-fixer": "^2.18",
-        "rector/rector": "0.9.16"
+        "rector/rector": "0.9.16",
+        "phpstan/phpstan": "^0.12.71"
     },
     "authors": [
         {
