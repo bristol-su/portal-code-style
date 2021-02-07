@@ -1,3 +1,3 @@
 #!/bin/bash
 
-"$GITHUB_WORKSPACE"/vendor/bin/php-cs-fixer fix --config .php-cs --dry-run
+"$GITHUB_WORKSPACE"/vendor/bin/rector process --dry-run --output-format=console --config="$GITHUB_WORKSPACE"/rector.php
