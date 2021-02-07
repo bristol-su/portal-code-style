@@ -6,7 +6,7 @@ runs:
   steps:
     - id: rector_run
       run: ${{ github.action_path }}/rector.sh || { cat ${{ github.workspace }}/output.log ; exit 1; }
-      shell: bash1
+      shell: bash
 
 branding:
   icon: 'check-square'
