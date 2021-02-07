@@ -4,7 +4,7 @@ description: Run tests with phpunit
 runs:
   using: "composite"
   steps:
-    - id: rector_run
+    - id: phpunit_run
       run: ${{ github.action_path }}/phpunit.sh || { cat ${{ github.workspace }}/output.log ; exit 1; }
       shell: bash
 

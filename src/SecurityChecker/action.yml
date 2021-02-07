@@ -4,7 +4,7 @@ description: Check for any security issues in dependencies
 runs:
   using: "composite"
   steps:
-    - id: rector_run
+    - id: security_checker_run
       run: ${{ github.action_path }}/rector.sh || { cat ${{ github.workspace }}/output.log ; exit 1; }
       shell: bash
 

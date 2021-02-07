@@ -4,7 +4,7 @@ description: Code style check with php-cs-fixer
 runs:
   using: "composite"
   steps:
-    - id: rector_run
+    - id: php_cs_run
       run: ${{ github.action_path }}/phpcs_fixer.sh || { cat ${{ github.workspace }}/output.log ; exit 1; }
       shell: bash
 
