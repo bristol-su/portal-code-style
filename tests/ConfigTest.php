@@ -1,8 +1,8 @@
 <?php
 
-namespace BristolSU\CodeStyle\Tests\PhpCs;
+namespace BristolSU\CodeStyle\Tests;
 
-use BristolSU\CodeStyle\PhpCs\Config;
+use BristolSU\CodeStyle\PhpCS\Config;
 
 class ConfigTest extends \PHPUnit\Framework\TestCase
 {
