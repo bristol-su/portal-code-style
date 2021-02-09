@@ -5,7 +5,7 @@ runs:
   using: "composite"
   steps:
     - id: security_checker_run
-      run: ${{ github.action_path }}/rector.sh || { cat ${{ github.workspace }}/output.log ; exit 1; }
+      run: ${{ github.action_path }}/security.sh || { cat ${{ github.workspace }}/output.log ; exit 1; }
       shell: bash
 
 branding:

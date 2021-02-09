@@ -12,7 +12,6 @@ Create a .php_cs.dist file in your project. You can find an example in [`./vendo
 
 Create a rector.php file in your project. You can find an example in [`./vendor/bristol-su/portal-code-style/examples/rector.php`](examples/rector.php)
 
-
 Add the following to your composer scripts
 
 ```
@@ -26,5 +25,14 @@ Add the following to your composer scripts
     }
 ```
 
-// Test this fixes. If it does, check out branch and fix whole of portal-v4
-// Add to composer scripts and add to pipeline
+## Github Actions
+
+You can now set up a github workflow using the actions we provide. See examples of all these at [`./vendor/bristol-su/portal-code-style/examples/workflow.php`](examples/workflow.yml)
+
+## Commands
+
+You can also run the following commands locally
+
+`composer run test`: Run the entire testsuite
+`composer run code-style`: Dry run all our coding checks to make sure your code will pass the pipeline
+`composer run fix-code-style`: Fix any minor formatting issues automatically
