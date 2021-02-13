@@ -6,7 +6,9 @@
         "php": ">=7.2",
         "friendsofphp/php-cs-fixer": "^2.18",
         "rector/rector": "0.9.16",
-        "phpstan/phpstan": "^0.12.71"
+        "phpstan/phpstan": "^0.12.71",
+        "pheromone/phpcs-security-audit": "^2.0",
+        "phpunit/phpunit": "^9.5"
     },
     "authors": [
         {
@@ -14,10 +16,6 @@
             "email": "tobytwigger1@gmail.com"
         }
     ],
-    "require-dev": {
-        "pheromone/phpcs-security-audit": "^2.0",
-        "phpunit/phpunit": "^9.5"
-    },
     "autoload": {
         "psr-4": {
             "BristolSU\\CodeStyle\\": "src/"
@@ -27,8 +25,5 @@
         "psr-4": {
             "BristolSU\\CodeStyle\\Tests\\": "tests/"
         }
-    },
-    "bin": [
-        "bin/code-style"
-    ]
+    }
 }

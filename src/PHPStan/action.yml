@@ -4,7 +4,7 @@ description: Static Analysis Test
 runs:
   using: "composite"
   steps:
-    - id: phpstam_run
+    - id: phpstan_run
       run: ${{ github.action_path }}/phpstan.sh || { cat ${{ github.workspace }}/output.log ; exit 1; }
       shell: bash
 
